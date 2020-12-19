@@ -15,6 +15,7 @@
   --logstudio-color: #000000;
   --background-footer-hero: #2f303a;
   --bg-command-color: #f5f4fa;
+  --border-bottom-heder: #ececec;
 }
 
 body {
@@ -34,6 +35,32 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.work,
+.command {
+  padding: 94px 0;
+}
+
 /* Header */
 
 .header {
@@ -42,9 +69,17 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--border-bottom-heder);
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
 }
 
 .logo-studio {
+  margin-right: 93px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -55,7 +90,22 @@ a {
   color: var(--accent-text-color);
 }
 
+.nav {
+  margin-right: auto;
+}
+.site-nav {
+  display: flex;
+}
+
+.site-nav > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--main-text-color);
 }
 .site-nav .nav-link:hover,
@@ -65,6 +115,14 @@ a {
 
 .site-nav .nav-link.current {
   color: var(--accent-text-color);
+}
+
+.contact {
+  display: flex;
+}
+
+.contact > .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-link {
@@ -83,6 +141,8 @@ a {
 }
 
 .main-theme {
+  padding-bottom: 30px;
+
   text-align: center;
   font-weight: 900;
   font-size: 44px;
@@ -92,6 +152,10 @@ a {
 }
 
 .hero-button {
+  border-radius: 4px;
+
+  cursor: pointer;
+
   background-color: var(--accent-text-color);
 
   font-family: inherit;
@@ -103,8 +167,20 @@ a {
 
 /* Преимущества(advantages) */
 
+.advantages > .container {
+  padding-top: 94px;
+  display: flex;
+}
+12 .list-advantages > .item-list:not(:last-child) {
+  margin-right: auto;
+}
+
 .advantages-title {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .title {
@@ -128,6 +204,14 @@ a {
   color: var(--main-text-color);
 }
 
+.work-img {
+  display: flex;
+}
+
+.work-img > .item:not(:last-child) {
+  margin-right: auto;
+}
+
 /* Наша команда(command) */
 .command {
   background-color: var(--bg-command-color);
@@ -135,6 +219,14 @@ a {
 
 .bloc-command {
   background-color: var(--white-text-color);
+}
+
+.command-title {
+  display: flex;
+}
+
+.command-title > .bloc-command:not(:last-child) {
+  margin-right: auto;
 }
 
 .employee {
