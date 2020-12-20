@@ -311,10 +311,6 @@ p {
 
 /* ПОРТФОЛИО */
 
-.title-filter {
-  display: none;
-}
-
 /* Фильтр работ */
 
 .filter {
@@ -375,6 +371,7 @@ p {
 
 .img-directions {
   margin-bottom: 20px;
+  display: block;
 }
 
 .example {
