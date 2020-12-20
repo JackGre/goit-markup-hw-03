@@ -16,6 +16,7 @@
   --background-footer-hero: #2f303a;
   --bg-command-color: #f5f4fa;
   --border-bottom-heder: #ececec;
+  --border-directions-work-color: #eeeeee;
 }
 
 body {
@@ -140,8 +141,13 @@ p {
   background-color: var(--background-footer-hero);
 }
 
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .main-theme {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   text-align: center;
   font-weight: 900;
@@ -153,9 +159,15 @@ p {
 
 .hero-button {
   border-radius: 4px;
-
+  display: block;
+  border: none;
   cursor: pointer;
-
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
   background-color: var(--accent-text-color);
 
   font-family: inherit;
@@ -171,11 +183,11 @@ p {
   padding-top: 94px;
   display: flex;
 }
-12 .list-advantages > .item-list:not(:last-child) {
-  margin-right: auto;
+.list-advantages > .item-list:not(:last-child) {
+  margin-right: 30px;
 }
 
-.advantages-title {
+.visually-heeden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -184,6 +196,7 @@ p {
 }
 
 .title {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   color: var(--main-text-color);
@@ -197,7 +210,10 @@ p {
 /* Чем мы занимаемся(work) */
 
 .work-title,
-.command-title {
+.text-title {
+  margin-bottom: 50px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -219,6 +235,7 @@ p {
 
 .bloc-command {
   background-color: var(--white-text-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .command-title {
@@ -229,7 +246,14 @@ p {
   margin-right: auto;
 }
 
+.img-command {
+  margin-bottom: 30px;
+}
+
 .employee {
+  margin-bottom: 10px;
+  text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -237,12 +261,19 @@ p {
 }
 
 .specialty {
+  margin-bottom: 30px;
+  text-align: center;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-text-color);
 }
 /* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .log-studio {
   font-family: Raleway;
@@ -253,18 +284,28 @@ p {
 }
 
 .address {
+  margin-top: 20px;
   font-style: normal;
   line-height: 1.17;
   color: var(--white-text-color);
 }
 
-.mail-tel {
+.footer-link {
+  margin-top: 9px;
+  display: block;
+}
+.mail,
+.tel {
   line-height: 1.17;
   color: var(--footer-text-color);
 }
 
-.mail-tel:hover,
-.mail-tel:focus {
+.mail:hover,
+.mail:focus {
+  color: var(--accent-text-color);
+}
+.tel:hover,
+.tel:focus {
   color: var(--accent-text-color);
 }
 
@@ -279,7 +320,28 @@ p {
 
 /* Фильтр работ */
 
+.filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-work > .filter-link:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-work {
+  justify-content: center;
+}
+
 .button-filter {
+  margin-bottom: 50px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  border: none;
+  cursor: pointer;
+
   background-color: var(--bg-command-color);
 
   font-family: inherit;
@@ -299,16 +361,43 @@ p {
 /*Направления работ по фильтру */
 
 /* Наименование примеров направлений работ */
+.scroll {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.directions-work:not(:nth-child(3n)) {
+  margin-right: auto;
+}
+.directions-work:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+.directions-work {
+  border: 1px solid var(--border-directions-work-color);
+}
+
+.img-directions {
+  margin-bottom: 20px;
+}
+
 .example {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-bottom: 4px;
 }
 
 .directions {
   font-size: 16px;
   line-height: 1.875;
   color: var(--secondary-text-color);
+
+  margin-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
