@@ -223,6 +223,9 @@ p {
 .work-img {
   display: flex;
 }
+.img-item {
+  display: block;
+}
 
 .work-img > .item:not(:last-child) {
   margin-right: auto;
@@ -247,6 +250,7 @@ p {
 }
 
 .img-command {
+  display: block;
   margin-bottom: 30px;
 }
 
