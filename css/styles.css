@@ -51,15 +51,11 @@ p {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
-}
-
-.work,
-.command {
-  padding: 94px 0;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Header */
@@ -127,6 +123,10 @@ p {
 }
 
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
 }
 .contact .contact-link:focus,
@@ -147,9 +147,13 @@ p {
 }
 
 .main-theme {
-  margin-bottom: 30px;
-
   text-align: center;
+  margin-bottom: 30px;
+  width: 696px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -179,8 +183,9 @@ p {
 
 /* Преимущества(advantages) */
 
-.advantages > .container {
+.advantages {
   padding-top: 94px;
+
   display: flex;
 }
 .list-advantages > .item-list:not(:last-child) {
@@ -193,6 +198,10 @@ p {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.item-list {
+  width: 270px;
 }
 
 .title {
@@ -208,6 +217,11 @@ p {
 }
 
 /* Чем мы занимаемся(work) */
+.work,
+.command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .work-title,
 .text-title {
@@ -228,7 +242,7 @@ p {
 }
 
 .work-img > .item:not(:last-child) {
-  margin-right: auto;
+  margin-right: 30px;
 }
 
 /* Наша команда(command) */
@@ -246,12 +260,16 @@ p {
 }
 
 .command-title > .bloc-command:not(:last-child) {
-  margin-right: auto;
+  margin-right: 30px;
 }
 
 .img-command {
   display: block;
-  margin-bottom: 30px;
+}
+
+.bclock-employee {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .employee {
@@ -265,7 +283,6 @@ p {
 }
 
 .specialty {
-  margin-bottom: 30px;
   text-align: center;
 
   font-weight: 400;
@@ -280,6 +297,8 @@ p {
 }
 
 .log-studio {
+  display: block;
+  margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -288,16 +307,21 @@ p {
 }
 
 .address {
-  margin-top: 20px;
   font-style: normal;
   line-height: 1.17;
   color: var(--white-text-color);
+  margin-bottom: 9px;
 }
 
 .footer-link {
-  margin-top: 9px;
   display: block;
+  padding-bottom: 9px;
 }
+
+.footer-link:last-child {
+  padding-bottom: 0px;
+}
+
 .mail,
 .tel {
   line-height: 1.17;
@@ -327,11 +351,14 @@ p {
 }
 
 .filter-work {
+  margin-bottom: 50px;
+}
+
+.filter-work {
   justify-content: center;
 }
 
 .button-filter {
-  margin-bottom: 50px;
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
@@ -373,8 +400,12 @@ p {
   border: 1px solid var(--border-directions-work-color);
 }
 
+.block-work {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .img-directions {
-  margin-bottom: 20px;
   display: block;
 }
 
@@ -395,7 +426,6 @@ p {
   line-height: 1.875;
   color: var(--secondary-text-color);
 
-  margin-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
 }
