@@ -17,6 +17,7 @@
   --bg-command-color: #f5f4fa;
   --border-bottom-heder: #ececec;
   --border-directions-work-color: #eeeeee;
+  --hero-bg-color: #c4c4c4;
 }
 
 body {
@@ -57,6 +58,13 @@ p {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 200px;
 }
 
 /* Header */
@@ -135,14 +143,20 @@ p {
 
 /* Hero */
 
-.section-hero,
-.footer {
-  background-color: var(--background-footer-hero);
+.hero.section {
+  padding: 0;
+  background-color: var(--hero-bg-color);
 }
 
-.section-hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+.hero .overlay {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .block-hero {
@@ -253,6 +267,8 @@ p {
 
 .bloc-command {
   background-color: var(--white-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -295,6 +311,7 @@ p {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--background-footer-hero);
 }
 
 .log-studio {
@@ -365,6 +382,7 @@ p {
   padding-left: 22px;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 
   background-color: var(--bg-command-color);
 
@@ -380,6 +398,9 @@ p {
 .filter-work .button-filter:focus {
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*Направления работ по фильтру */
@@ -388,6 +409,12 @@ p {
 .scroll {
   display: flex;
   flex-wrap: wrap;
+}
+
+.scroll .works-link:hover,
+.scroll .works-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .directions-work:not(:nth-child(3n)) {
